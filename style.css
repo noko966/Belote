@@ -1,0 +1,51 @@
+.card {
+    width: 100px;
+    height: 130px;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+}
+
+.card-red{
+    color: red;
+}
+
+.card-black{
+    color: #000;
+}
+
+.card_suit {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+}
+
+.card_rank {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.card_rank.card_rank-bot {
+    top: auto;
+    left: auto;
+    bottom: 8px;
+    right: 8px;
+    transform: rotate(180deg);
+}
+
+.player_deck{
+    display: flex;
+}
+
+.player_deck > .card{
+    margin-right: 6px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+</body>
+
+
+<script src="state.js"></script>
+<script src="html.js"></script>
+
+
+
+<script>
+    var p1Container = document.createElement('div');
+    var p2Container = document.createElement('div')
+    p1Container.className = 'player_deck';
+    p2Container.className = 'player_deck';
+
+
+    document.body.appendChild(p1Container);
+    document.body.appendChild(p2Container);
+
+
+    initialState.players.forEach(player => {
+        if (player.id === 1) {
+            player.cards.map(c => {
+                createCard(c, p1Container)
+            })
+        }
+        else{
+            player.cards.map(c => {
+                createCard(c, p2Container)
+            })
+        }
+
+    });
+
+
+
+</script>
+
+</html>
